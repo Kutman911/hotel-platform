@@ -23,7 +23,10 @@ public class RoomResponse {
         this.id = id;
     }
 
-    public RoomResponse(Long id, String roomType, String photo, BigDecimal price, boolean isBooked, List<BookingResponse> bookings) {
+
+
+    public RoomResponse(Long id, String roomType, BigDecimal price,
+                        boolean isBooked, List<BookingResponse> bookingInfo, byte[] photoBytes) {
         this.id = id;
         this.roomType = roomType;
         this.photo = photo;
@@ -31,4 +34,5 @@ public class RoomResponse {
         this.isBooked = isBooked;
         this.bookings = bookings;
     }
+
 }
